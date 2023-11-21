@@ -1,0 +1,80 @@
+
+body{
+  background: #3a6186;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#productos-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+justify-content: center;}
+
+.tarjeta-producto{
+  background-color: var(--color-acento-claro);
+  text-align: center;
+  padding: 10px;
+  max-width: 400px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 200ms;
+}
+
+.tarjeta-producto:hover{
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  translate: 0px -5px;
+}
+
+.tarjeta-producto img{
+  max-width:100%;
+  aspect-ratio: 1.5;
+}
+
+.precio{
+  font-weight: 600;
+}
+
+.tarjeta-producto button{
+  font-size: larger;
+  background-color: var(--color-acento);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  border:unset;
+  cursor:pointer;
+}
+
+.lol{
+  display: inline-block;
+  width: 5%;
+  height: 5vh;
+  text-align: center;
+  border: 2px solid ;
+  box-shadow: 5px 5px 5px purple;
+  border-radius: 5px;
+  animation: moverse 2s reverse infinite;
+  color: brown;
+  
+}
+
+.lol::first-letter{
+  color: #3a6186;
+}
+@keyframes moverse{
+
+  0%{
+    left: 0%;
+  }
+  25%{
+    translate: 100%;
+  }
+  50%{
+    left: 50%;
+  }
+  100%{
+    translate: 25% 0px ;
+  }
+
+}
